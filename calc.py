@@ -18,7 +18,7 @@ def on_click(char):
             entry.delete(0, tk.END)
     else:
         entry.insert(tk.END, char)
-    entry.config(state="readonly")
+
 
 def on_key(event):
     entry.config(state="normal")
@@ -59,4 +59,5 @@ for j in range(4):
     root.grid_columnconfigure(j, weight=1)
 
 root.bind("<Key>", on_key)
+
 root.mainloop()
